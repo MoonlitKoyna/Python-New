@@ -1,0 +1,5 @@
+Here we are checking the the repeated lines.
+Here we are checking the the repeated lines.
+Here we are checking the the repeated lines.
+Next we will be removing them!
+Then we'll see the output.
