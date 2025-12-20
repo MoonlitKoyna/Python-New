@@ -1,0 +1,2 @@
+Hello
+ File in append mode-This is appended text.
