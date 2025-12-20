@@ -8,5 +8,5 @@ print(file.read(7))
 file.close()
 
 file = open("Example.txt", "a")
-file.write(" \n Hiiiii this is Koyna!")
+file.write(" \n Hiiii this is Koyna!")
 file.close()
