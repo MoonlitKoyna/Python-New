@@ -28,7 +28,7 @@ print(cont1)
 
 main.close()
 file.close()
-
+#
 # Now we are removing the repeated lines from the file
 outputfile = open("removed_lines.txt", "w")
 inputfile = open("raw_notes.txt", "r")
