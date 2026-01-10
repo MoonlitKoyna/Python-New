@@ -1,22 +1,18 @@
 import tkinter as tk
 import random
 
-root = tk.Tk()
-root.title("Rock Paper Scissors")
-root.geometry("400x400")
+win = tk.Tk()
+win.title("RPS")
 
-choices = ["Rock", "Paper", "Scissors"]
+def play(choice):
+    comp = random.choice(["Rock", "Paper", "Scissors"])
+    result["text"] = "You: " + choice + "\nComputer: " + comp
 
-def play(user_choice):
-    computer_choice = random.choice(choices)
+tk.Button(win, text="Rock", command=lambda: play("Rock")).pack()
+tk.Button(win, text="Paper", command=lambda: play("Paper")).pack()
+tk.Button(win, text="Scissors", command=lambda: play("Scissors")).pack()
 
-    if user_choice == computer_choice:
-        result = "It's a Tie"
-    elif user_choice == "Rock" and computer_choice == "Scissors":
-        result = "You Win"
-    elif user_choice == "Paper" and computer_choice == "Rock":
-        result = "You Win"
-    elif user_choice == "Scissors" and computer_choice == "Paper":
-        result = "You Win"
-    else:
-        result = "Computer Wins"
+result = tk.Label(win, text="")
+result.pack()
+
+win.mainloop()
